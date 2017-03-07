@@ -12,19 +12,7 @@ describe 'linear_search' do
 
   context 'when the array does not contain the searched-for element' do
     it 'returns nil if the element cannot be found' do
-
-      raise <<-STUDENT_INSTRUCTIONS
-
-      Hey DBC Student! We raised this error intentionally :D
-
-      Please go here: #{__FILE__}:#{__LINE__}
-
-      and replace the giant raise statement with test code written by you, the student."
-
-      .
-      STUDENT_INSTRUCTIONS
-
-
+      expect(true).to be_falsy, "Hey DBC Student! We wrote a test that was guaranteed to fail. Open up the spec: 'when the array does not contain the searched-for element' and write reasonable test code written by you, the student."
     end
   end
 end
