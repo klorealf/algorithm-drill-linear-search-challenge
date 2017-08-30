@@ -24,4 +24,9 @@ describe 'global_linear_search' do
   it 'returns all indexes of existing values in array' do
     expect(global_linear_search(:A, symbols)).to eq [2, 3]
   end
+
+    it 'returns nil if the element cannot be found' do
+      expect(global_linear_search(:Z, symbols)).to eq nil
+    end
+
 end
