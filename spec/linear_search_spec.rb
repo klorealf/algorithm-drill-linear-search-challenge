@@ -12,7 +12,8 @@ describe 'linear_search' do
 
   context 'when the array does not contain the searched-for element' do
     it 'returns nil if the element cannot be found' do
-      expect(true).to be_falsy, "Hey DBC Student! We wrote a test that was guaranteed to fail. Open up the spec: 'when the array does not contain the searched-for element' and write reasonable test code written by you, the student."
+      index_of_a = linear_search(:Z, symbols)
+      expect(index_of_a).to eq nil
     end
   end
 end
