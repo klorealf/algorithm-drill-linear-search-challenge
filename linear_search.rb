@@ -9,4 +9,14 @@ i = 0
 end
 
 
+def global_linear_search(target, arr)
+i = 0
+results = []
+  while i < arr.length
+    results << i if arr[i] == target
+    i += 1
+  end
+    results
+end
+
 
