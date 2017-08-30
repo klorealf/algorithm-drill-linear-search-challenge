@@ -20,5 +20,19 @@ end
 
 
 describe 'global_linear_search' do
+  let(:array_of_letters) { ['d','e','v', 'b', 'o', 'o', 't', 'c', 'a', 'm', 'p'] }
+    it "it returns the index of the element passed as a parameter" do
+      index_of_one_letter = global_linear_search("t", array_of_letters)
+      expect(index_of_one_letter).to eq [6]
+    end
 
+    it "it returns the index of the element passed as a parameter" do
+      index_of_one_letter = global_linear_search("o", array_of_letters)
+      expect(index_of_one_letter).to eq [4, 5]
+    end
+
+    it "it returns an empty array when element is not in array" do
+      index_of_one_letter = global_linear_search("z", array_of_letters)
+      expect(index_of_one_letter).to eq []
+    end
 end
