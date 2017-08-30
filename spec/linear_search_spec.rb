@@ -29,4 +29,8 @@ describe 'global_linear_search' do
       expect(global_linear_search(:Z, symbols)).to eq nil
     end
 
+    it "return index that has element C in it" do
+      expect(global_linear_search(:C, symbols)).to eq [4]
+    end
+
 end
