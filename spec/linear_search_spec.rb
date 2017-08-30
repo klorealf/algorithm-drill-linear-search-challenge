@@ -19,5 +19,9 @@ end
 
 
 describe 'global_linear_search' do
+  let(:symbols) { [:Q, :O, :A, :A, :C, :G, :S, :U] }
 
+  it 'returns all indexes of existing values in array' do
+    expect(global_linear_search(:A, symbols)).to eq [2, 3]
+  end
 end
